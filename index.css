@@ -1,0 +1,11 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --header-h: 80px;
+}
+@media (max-width: 640px){
+  :root{
+    --header-h: 64px;
+  }
+}

@@ -10,7 +10,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenMenu, onOpenLocations }) => {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center bg-secondary-900 overflow-hidden">
+    <section className="pt-[var(--header-h)] relative h-screen min-h-[600px] flex items-center justify-center bg-secondary-900 overflow-hidden pt-24 sm:pt-28 lg:pt-32">
       <div className="absolute inset-0 z-0">
         <ResponsiveImage
           name="obed"
@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenMenu, onOpenLocations }) => {
           </span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-extrabold text-white mb-4 tracking-tight drop-shadow-2xl">
+        <h1 className="text-[clamp(2.6rem,10vw,6rem)] md:text-[clamp(4.5rem,7vw,9rem)] font-serif font-extrabold text-white mb-4 tracking-tight leading-[0.9] break-words drop-shadow-2xl">
           САМОВАРЧИК
         </h1>
 
@@ -75,3 +75,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenMenu, onOpenLocations }) => {
     </section>
   );
 };
+
+
+
