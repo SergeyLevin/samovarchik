@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# generated optimized images (do not commit)
+public/images/*
+!public/images/.gitkeep
+# image optimization report (generated)
+tools/images.report.json
