@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # IMPORTANT: generate images BEFORE build so they get copied into dist/
+      - name: Optimize images
+        run: |
+          mkdir -p public/images
+          npm run images:optimize
+
       - name: Build
         run: npm run build
 
